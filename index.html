@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<script src="jquery.min.js"></script>
+	<!-- <style> -->
+		<!-- *{border: 1px solid red} -->
+	<!-- </style> -->
+	
+	<style>
+		#modal{
+			background-color: black;
+			display: none;
+			z-index: 1;
+			height: 100vh;
+			width: 100%; 
+			position:fixed; 
+			top:0; 
+			left:0;
+			opacity: 50%;
+			}
+	</style>
+</head>
+<body>
+
+	<div id="modal">
+		teste
+	</div>
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+	<div style="text-align: center; margin: 1.5rem">
+		<h3>Bem-vindo ao meu portfolio</h3>
+		<h5>Aqui você pode ver todas minhas artes, assim como me contratar</h5>
+	</div>
+
+<div class="container text-center">
+  <div class="row" style="margin-bottom: 3em">
+      <div class="card col" style="width: 18rem;">
+  <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+      <div class="card col" style="width: 18rem;">
+  <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+    <div class="card col" style="width: 18rem;">
+  <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+	
+	  <div class="row">
+      <div class="card col" style="width: 18rem;">
+  <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+      <div class="card col" style="width: 18rem;">
+  <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+    <div class="card col" style="width: 18rem;">
+  <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+	
+	
+  </div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+	<script>
+		$( ".btn" ).click(function(){
+			$( "#modal" ).toggle( "slow" );
+		})
+		
+		$( "#modal" ).click(function(){
+			$(this).toggle( 200 );
+		})
+	</script>
+
+</body>
+</html>
