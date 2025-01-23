@@ -13,8 +13,8 @@
 	<!-- </style> -->
 	
 	<style>
-		#modal{
-			background-color: black;
+		#modal-container{
+			background-color: rgba(0,0,0,0.4);
 			display: none;
 			z-index: 1;
 			height: 100vh;
@@ -22,20 +22,55 @@
 			position:fixed; 
 			top:0; 
 			left:0;
-			opacity: 50%;
+      justify-content: center;
 			}
+
+    #modal{
+      width: fit-content;
+      height: 85vh;
+      /* margin-left: 10%; */
+      margin-top: 5vh;
+      background-color: white;
+      text-align: center;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      border-radius: 50px;
+    }
+
+    #modal-imagem{
+      max-width: 58vh;
+      width: 100%;
+      margin-top: 5vh;
+    }
+
+    #modal img{
+      height: 100%; width: 100%; object-fit: contain
+    }
+
+    #modal-descricao{
+      width: 100%;
+    }
+    .card-img-top{
+      height: 400px;
+    }
 	</style>
 </head>
 <body>
 
-	<div id="modal">
-		teste
+	<div id="modal-container">
+		<div id="modal">
+      
+      <div id="modal-imagem">
+        <img id="imagem-modal">
+      </div>
+
+      <div id="modal-descricao">
+        <p id="pintura-title"></p>
+        <p id="pintura-info"></p>
+      </div>
+    </div>
 	</div>
-
-
-
-
-
 
 <nav class="navbar navbar-expand-lg bg-primary">
   <div class="container-fluid">
@@ -63,68 +98,68 @@
 </nav>
 
 	<div style="text-align: center; margin: 1.5rem">
-		<h3>Bem-vindo ao meu portfolio</h3>
-		<h5>Aqui você pode ver todas minhas artes, assim como me contratar</h5>
+		<h3>Exposição virtual de Claude Monet</h3>
+		<h5>Aqui você pode ver as principais obras do famoso pintor Claude Monet</h5>
 	</div>
 
 <div class="container text-center">
   <div class="row" style="margin-bottom: 3em">
       <div class="card col" style="width: 18rem;">
-  <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
+  <img src="https://cdn.culturagenial.com/imagens/obrameules-cke.jpg?class=article" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">Meules</h5>
+    <p class="card-text">Uma das pinturas mais famosas do renomado pintor Claude Monet</p>
+    <a href="#" class="btn btn-primary" data-autor="Claude Monet" data-ano="1890" data-titulo="Meules" data-imagem="https://cdn.culturagenial.com/imagens/obrameules-cke.jpg?class=article">Ver Imagem</a>
   </div>
 </div>
 
-      <div class="card col" style="width: 18rem;">
-  <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
+<div class="card col" style="width: 18rem;">
+  <img src="https://cdn.culturagenial.com/imagens/mulher-com-sombrinha-cke.jpg?class=article" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">Mulher com Sombrinha</h5>
+    <p class="card-text">Uma das pinturas mais famosas do renomado pintor Claude Monet</p>
+    <a href="#" class="btn btn-primary" data-autor="Claude Monet" data-ano="1875" data-titulo="Mulher com Sombrinha" data-imagem="https://cdn.culturagenial.com/imagens/mulher-com-sombrinha-cke.jpg?class=article">Ver Imagem</a>
   </div>
 </div>
 
-    <div class="card col" style="width: 18rem;">
-  <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
+<div class="card col" style="width: 18rem;">
+  <img src="https://cdn.culturagenial.com/imagens/restricted-0.jpg?class=article" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">Ponte Sobre Uma Lagoa de Lírios de Água</h5>
+    <p class="card-text">Uma das pinturas mais famosas do renomado pintor Claude Monet</p>
+    <a href="#" class="btn btn-primary" data-autor="Claude Monet" data-ano="1899" data-titulo="Ponte Sobre Uma Lagoa de Lírios de Água" data-imagem="https://cdn.culturagenial.com/imagens/restricted-0.jpg?class=article">Ver Imagem</a>
   </div>
 </div>
     </div>
 	
-	  <div class="row">
-      <div class="card col" style="width: 18rem;">
-  <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
+<div class="row">
+  <div class="card col" style="width: 18rem;">
+  <img src="https://cdn.culturagenial.com/imagens/claude-monet-impression-soleil-levant-cke.jpg?class=article" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">Impressão, Nascer do Sol</h5>
+    <p class="card-text">Uma das pinturas mais famosas do renomado pintor Claude Monet</p>
+    <a href="#" class="btn btn-primary" data-autor="Claude Monet" data-ano="1872" data-titulo="Impressão, Nascer do Sol" data-imagem="https://cdn.culturagenial.com/imagens/claude-monet-impression-soleil-levant-cke.jpg?class=article">Ver Imagem</a>
   </div>
 </div>
 
-      <div class="card col" style="width: 18rem;">
-  <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
+<div class="card col" style="width: 18rem;">
+  <img src="https://cdn.culturagenial.com/imagens/878px-claude-monet-024-cke.jpg?class=article" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">Mulheres no Jardim</h5>
+    <p class="card-text">Uma das pinturas mais famosas do renomado pintor Claude Monet</p>
+    <a href="#" class="btn btn-primary" data-autor="Claude Monet" data-ano="1866" data-titulo="Mulheres no Jardim" data-imagem="https://cdn.culturagenial.com/imagens/878px-claude-monet-024-cke.jpg?class=article">Ver Imagem</a>
   </div>
 </div>
 
-    <div class="card col" style="width: 18rem;">
+<div class="card col" style="width: 18rem;">
   <img src="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">Fishing Boats</h5>
+    <p class="card-text">Uma das pinturas mais famosas do renomado pintor Claude Monet</p>
+    <a href="#" class="btn btn-primary" data-autor="Claude Monet" data-ano="1883" data-titulo="Fishing Boats" data-imagem="https://www.antiquesandthearts.com/wp-content/uploads/2019/10/claude_monet_fishing_boats_1883_high_res.jpg">Ver Imagem</a>
   </div>
 </div>
-    </div>
+</div>
 	
 	
   </div>
@@ -132,13 +167,30 @@
 
 
 	<script>
+
 		$( ".btn" ).click(function(){
-			$( "#modal" ).toggle( "slow" );
+			$( "#modal-container" ).css("display", "flex");
+
+      const imgsource = $(this).data("imagem");
+      const imgAutor = $(this).data("autor")
+      const imgAno = $(this).data("ano")
+      const imgTitulo = $(this).data("titulo")
+
+      $(" #imagem-modal ").attr({
+        "src": imgsource,
+        "alt": imgTitulo
+      });
+      
+      $( "#pintura-title" ).html(imgTitulo)
+      $( "#pintura-info" ).html(imgAutor + ", " + imgAno)
 		})
 		
-		$( "#modal" ).click(function(){
+		$( " #modal-container " ).click(function(){
 			$(this).toggle( 200 );
 		})
+
+
+
 	</script>
 
 </body>
